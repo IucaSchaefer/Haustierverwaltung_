@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace Haustier
 {
-    public class Kaninchen : Saeuger
+    public class Kaninchen : Saeuger, IPflanzenfresser
     {
-        public Kaninchen(string name) 
+        public Kaninchen(string name, string Besitzer) 
         {
             base.name = name;
+            base.besitzer = Besitzer;
+        }
+
+        public string Fressen()
+        {
+            return Name + " frisst Pflanzen";
         }
 
         public override string Pflege()

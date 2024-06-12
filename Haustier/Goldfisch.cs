@@ -9,9 +9,10 @@ namespace Haustier
 {
     public class Goldfisch : Fisch, IStreichelbar
     {
-        public Goldfisch(string name)
+        public Goldfisch(string name, string Besitzer)
         {
             base.name = name;
+            base.besitzer = Besitzer;
         }
 
         public override string Schwimmen()

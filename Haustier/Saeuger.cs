@@ -13,7 +13,7 @@ namespace Haustier
             return this.ToString().Substring(ToString().IndexOf('.') + 1) + " " + Name;
         }
 
-        public string Streicheln()
+        public virtual string Streicheln()
         {
             return Name + " wird gestreichelt";
         }

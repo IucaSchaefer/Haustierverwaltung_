@@ -8,9 +8,10 @@ namespace Haustier
 {
     public class Guppy : Fisch
     {
-        public Guppy(string name)
+        public Guppy(string name, string Besitzer)
         {
             base.name = name;
+            base.besitzer = Besitzer;
         }
 
         public override string Schwimmen()
